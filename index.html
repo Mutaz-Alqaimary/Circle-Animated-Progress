@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="circle_animated_progress.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>SVG Circle Progress</h1>
+  <h2>Based off of CSS3 circle progress bars</h2>
+
+  <div id="cont" data-pct="0">
+    <svg id="svg" width="200" height="200" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="566" stroke-dashoffset="0"></circle>
+      <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="566" stroke-dashoffset="0">
+      </circle>
+    </svg>
+  </div>
+  <div class="percent-box">
+    <label for="percent">Type a percent!</label>
+    <input type="text" id="percent" name="percent">
+    <input type="button" value="calculate">
+  </div>
+
+  <script src="circle_animated_progress.js"></script>
+</body>
+
+</html>

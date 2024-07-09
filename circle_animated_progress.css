@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+#svg circle {
+  stroke: #666;
+  stroke-width: 1em;
+}
+#svg #bar {
+  stroke: #ff9f1e;
+  stroke-dashoffset: 566;
+  stroke-linecap: round;
+}
+#cont {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 2em auto;
+  box-shadow: 0 0 1em black;
+  position: relative;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+#cont:after {
+  content: attr(data-pct) "%";
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  display: grid;
+  place-content: center;
+  font-size: 2em;
+  box-shadow: inset 0 0 1em black;
+  text-shadow: 0 0 0.5em black;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -moz-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  -o-transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+input {
+  color: #000;
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  height: 100%;
+  padding-top: 2em;
+  text-align: center;
+}
+h1,
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5em black;
+}
+h2 {
+  font-weight: 300;
+}
+input[type="text"] {
+  border: 1px solid #777;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+  outline: none;
+  margin: 1em auto 0 1em;
+  text-align: center;
+  font-size: 16px;
+}
+input[type="button"] {
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 1.6px;
+  margin: 1em auto;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+input[type="button"]:active {
+  background-color: #ccc;
+}
